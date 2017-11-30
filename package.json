@@ -1,5 +1,5 @@
 {
-  "name": "simple-analytics",
+  "name": "custom-analytics",
   "version": "0.1.0",
   "description": "Declarative Google Analytics event bindings",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wellcometrust/simple-analytics.git"
+    "url": "git+https://github.com/wellcometrust/custom-analytics.git"
   },
   "keywords": [
     "google-analytics",
@@ -18,7 +18,7 @@
   "author": "Jakub Fiala",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wellcometrust/simple-analytics/issues"
+    "url": "https://github.com/wellcometrust/custom-analytics/issues"
   },
-  "homepage": "https://github.com/wellcometrust/simple-analytics#readme"
+  "homepage": "https://github.com/wellcometrust/custom-analytics#readme"
 }

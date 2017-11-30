@@ -50,13 +50,13 @@ const trackEvent = category => event => {
 /**
  * Initiates events tracking for analytics
  */
-const simpleAnalytics = (categories) => {
+const customAnalytics = (categories) => {
   if (!('GoogleAnalyticsObject' in window)) {
-    throw new ReferenceError('simple-analytics: Could not find `GoogleAnalyticsObject` in `window`');
+    throw new ReferenceError('custom-analytics: Could not find `GoogleAnalyticsObject` in `window`');
   }
 
   categories.forEach(trackCategory);
 };
 
-export { simpleAnalytics };
+export { customAnalytics };
 

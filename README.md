@@ -1,4 +1,4 @@
-# simple-analytics
+# custom-analytics
 
 A JavaScript library for declarative custom event bindings for Google Analytics.
 
@@ -53,16 +53,16 @@ const categories = [
 ];
 ```
 
-3. Pass your event declarations object to the `simpleAnalytics` function exported by this package:
+3. Pass your event declarations object to the `customAnalytics` function exported by this package:
 
 ```js
-import { simpleAnalytics } from 'simple-analytics';
+import { customAnalytics } from 'custom-analytics';
 
 const categories = [
   // ...
 ];
 
-simpleAnalytics(categories);
+customAnalytics(categories);
 ```
 
 
