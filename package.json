@@ -1,0 +1,24 @@
+{
+  "name": "simple-analytics",
+  "version": "0.1.0",
+  "description": "Declarative Google Analytics event bindings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellcometrust/simple-analytics.git"
+  },
+  "keywords": [
+    "google-analytics",
+    "analytics",
+    "events"
+  ],
+  "author": "Jakub Fiala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wellcometrust/simple-analytics/issues"
+  },
+  "homepage": "https://github.com/wellcometrust/simple-analytics#readme"
+}
