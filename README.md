@@ -1,4 +1,4 @@
-# custom-analytics
+# ga-tracker
 
 A JavaScript library for declarative custom event bindings for Google Analytics.
 
@@ -53,16 +53,25 @@ const categories = [
 ];
 ```
 
-3. Pass your event declarations object to the `customAnalytics` function exported by this package:
+3. Pass your event declarations object to the `trackEvents` function exported by this package:
 
 ```js
-import { customAnalytics } from 'custom-analytics';
+import { trackEvents } from 'ga-tracker';
 
 const categories = [
   // ...
 ];
 
-customAnalytics(categories);
+trackEvents(categories);
+```
+
+4. This library also provides simple scroll depth tracking with the `trackScrollDepth` function:
+
+```js
+import { trackScrollDepth } from 'ga-tracker';
+
+// the argument is a list of depth percentages expressed as fractions of 1
+trackScrollDepth([ 0.1, 0.5, 0.75, 0.99 ]);
 ```
 
 

@@ -1,5 +1,6 @@
 /* global ENV */
-import { nodeList } from 'utils';
+import { nodeList } from './utils';
+import { trackScrollDepth } from './scroll-depth.js';
 
 /**
  * Sends a GA event with provided params.
@@ -50,7 +51,7 @@ const trackEvent = category => event => {
 /**
  * Initiates events tracking for analytics
  */
-const customAnalytics = (categories) => {
+const trackEvents = (categories) => {
   if (!('GoogleAnalyticsObject' in window)) {
     throw new ReferenceError('custom-analytics: Could not find `GoogleAnalyticsObject` in `window`');
   }
@@ -58,5 +59,5 @@ const customAnalytics = (categories) => {
   categories.forEach(trackCategory);
 };
 
-export { customAnalytics };
+export { trackEvents, trackScrollDepth };
 
